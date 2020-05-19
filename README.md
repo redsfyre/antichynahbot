@@ -3,8 +3,14 @@ Telegram gruplarında Çince karakter barındıran mesajları silen ve bu mesajl
 
 Test edilmemiş ama çalışacağını umduğum bir diğer özelliği ise üyenin ad-soyad bilgisindeki Çince karakterleri tespit edip gruptan atabiliyor olması
 
-## Çalıştırmak için
+### Bağımlılıkları kurmak için;
 
 `npm i`
 
-`node /src/index.js`
+### Çalıştırmak için;
+
+.env dosyası oluşturulup içine 
+
+`BOT_TOKEN=<BotFather'dan alacağınız token>` satırı eklenecek
+
+Ardından `node /src/index.js` komutu ile bot aktifleştirilecek
