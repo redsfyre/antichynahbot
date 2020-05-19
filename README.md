@@ -11,12 +11,6 @@ Test edilmemiş ama çalışacağını umduğum bir diğer özelliği ise üyeni
 
 .env dosyası oluşturulup içine 
 
-`BOT_TOKEN=<BotFather'dan alacağınız token>` 
+`BOT_TOKEN=<BotFather'dan alacağınız token>` satırı eklenecek
 
-satırı eklenecek
-
-Ardından
-
-`node /src/index.js`
-
-komutu ile bot aktifleştirilecek
+Ardından `node /src/index.js` komutu ile bot aktifleştirilecek
