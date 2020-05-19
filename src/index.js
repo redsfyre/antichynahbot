@@ -1,5 +1,5 @@
 const TelegramBot = require('node-telegram-bot-api');
-const token = '1075638820:AAF4qEzw6p54C3ZeTXgrUHlqf2K6l401aL8';
+const token = '';
 const bot = new TelegramBot(token, {polling: true});
 const containsChinese = require('contains-chinese');
 
