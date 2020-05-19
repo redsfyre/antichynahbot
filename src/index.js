@@ -1,9 +1,10 @@
 const TelegramBot = require('node-telegram-bot-api');
-const token = '';
+const token = 'BOT_TOKEN';
 const bot = new TelegramBot(token, {polling: true});
 const containsChinese = require('contains-chinese');
 const express = require('express');
 const app     = express();
+require('dotenv').config();
 
 app.set('port', (process.env.PORT || 5000));
 
@@ -15,12 +16,12 @@ app.get('/', function(request, response) {
     console.log('App is running, server is listening on port ', app.get('port'));
 });
 
-bot.onText(/\/start@AntiChyNahBot/, (msg) => {
+bot.onText(/\/start/, (msg) => {
 	bot.sendMessage(msg.chat.id, "Sen yeter ki başlamak iste :)");
 });
 
 
-bot.onText(/\/help@AntiChyNahBot/, (msg) => {
+bot.onText(/\/help/, (msg) => {
 	bot.sendMessage(msg.chat.id, "Çok detaylandırılacak bi özelliğim yok. Kullanmayı bilmiyorsanız kullanmayın.");
 });
 
