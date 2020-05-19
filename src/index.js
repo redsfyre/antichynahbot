@@ -2,10 +2,8 @@ const TelegramBot = require('node-telegram-bot-api');
 const token = '';
 const bot = new TelegramBot(token, {polling: true});
 const containsChinese = require('contains-chinese');
-
-var isChinese = require('is-chinese');
-var express = require('express');
-var app     = express();
+const express = require('express');
+const app     = express();
 
 app.set('port', (process.env.PORT || 5000));
 
@@ -23,7 +21,7 @@ bot.onText(/\/start@AntiChyNahBot/, (msg) => {
 
 
 bot.onText(/\/help@AntiChyNahBot/, (msg) => {
-	bot.sendMessage(msg.chat.id, "Çok detaylandırılacak bi özelliğim yok. Kullanmayı bilmiyorsanız kullanmayın. İletişim için => https://t.me/gpg0x5CF5C04E");
+	bot.sendMessage(msg.chat.id, "Çok detaylandırılacak bi özelliğim yok. Kullanmayı bilmiyorsanız kullanmayın.");
 });
 
 
