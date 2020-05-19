@@ -1,0 +1,25 @@
+{
+  "name": "antichynahbot",
+  "version": "0.0.3",
+  "description": "An ordinary Telegram Bot",
+  "main": "index.js",
+  "dependencies": {
+    "contains-chinese": "^1.0.0",
+    "express": "^4.17.1",
+    "is-chinese": "^1.2.9",
+    "node-telegram-bot-api": "^0.40.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Yasin İsa YILDIRIM",
+  "license": "LGPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "Telegram"
+  ]
+}
