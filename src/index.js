@@ -29,10 +29,10 @@ bot.onText(/\/help/, (msg) => {
 bot.on("message", (msg) => {
 
     if(containsChinese(msg.text) === true){
-        bot.sendMessage(msg.chat.id, 
-                        "Kurallarımız var ve sen bazılarına uymamış gibi görünüyorsun." + 
-                        " Bu yüzden seninle yollarımızı ayırıyoruz." + 
-                        " Güle güle " + msg.from.first_name);
+//        bot.sendMessage(msg.chat.id, 
+//                        "Kurallarımız var ve sen bazılarına uymamış gibi görünüyorsun." + 
+//                        " Bu yüzden seninle yollarımızı ayırıyoruz." + 
+//                        " Güle güle " + msg.from.first_name);
         bot.kickChatMember(msg.chat.id, msg.from.id);
         bot.deleteMessage(msg.chat.id, msg.message_id);
     
