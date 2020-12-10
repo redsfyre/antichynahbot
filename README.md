@@ -9,8 +9,8 @@ Test edilmemiş ama çalışacağını umduğum bir diğer özelliği ise üyeni
 
 ### Çalıştırmak için;
 
-.env dosyası oluşturulup içine 
+.env dosyası oluşturarak 
 
-`BOT_TOKEN=<BotFather'dan alacağınız token>` satırı eklenecek
+`BOT_TOKEN=<BotFather'dan alacağınız token>` satırını eklemelisiniz.
 
-Ardından `node /src/index.js` komutu ile bot aktifleştirilecek
+Ardından `node /src/index.js` komutu ile botu çalıştırabilirsiniz
